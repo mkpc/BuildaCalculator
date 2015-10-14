@@ -57,7 +57,7 @@ print("//////Homework1: Build a calculator/////////")
 print("Please enter one operator follow by two Int.")
 print("For example, add(1,2)")
 
-let inputForHW1 = input()
+let inputForHW1 = "add(1,nil)"
 var commandArrForHW1 = inputForHW1.componentsSeparatedByCharactersInSet(characters)
 
 var command = ""
@@ -172,8 +172,8 @@ func subTuple (first : (Int,Int), second : (Int,Int))->(Int,Int){
 }
 
 func sumDict (frist : [Double : Double])->(Int,Int){
-     keyResult  = 0
-     valResult  = 0
+    keyResult  = 0
+    valResult  = 0
     for (key, value) in frist {
         keyResult += (Double)(key)
         valResult += (Double)(value)
@@ -188,7 +188,7 @@ func subDict (frist : [Double : Double])->(Int,Int){
         keyResult -= key
         valResult -= value
     }
-        return ((Int)(keyResult),(Int)(valResult))
+    return ((Int)(keyResult),(Int)(valResult))
 }
 
 print("")
@@ -215,4 +215,6 @@ print("")
 print("///Add fucntion(for Dictionary[Double])///")
 print("Input dictionary\(numDoubleDic)")
 print(sumDict(numDoubleDic))
+
+
 
